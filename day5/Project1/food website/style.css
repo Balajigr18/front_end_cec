@@ -1,0 +1,47 @@
+/* style.css - simple custom styles */
+:root {
+  /* Cool & Minimalist Palette */
+  --brand: #192429; /* Slate Blue - Primary/Action Color */
+  --secondary: #d7b8b8; /* Light Gray - Background/Neutral */
+  --accent: #c7a052; /* Mustard Yellow - Accent/Highlight */
+  --text: #2D3A44; /* Dark Navy - Text Color */
+}
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  /* Optional: Set a light background color */
+  background-color: var(--secondary);
+  color: var(--text);
+}
+.navbar-brand {
+  font-weight: 700;
+  /* Use the primary brand color for the main logo */
+  color: var(--brand) !important;
+}
+.card img {
+  height: 320px;
+  object-fit: cover;
+}
+/* Style links/buttons using the brand color */
+a,
+.btn-primary {
+  color: var(--brand);
+}
+.btn-primary {
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+footer {
+  font-size: 0.9rem;
+}
+@media (max-width: 576px) {
+  .card img {
+    height: 160px;
+  }
+}
+/* Active navigation link color */
+a.nav-link.active {
+  color: var(--text) !important; /* Use the dark text color for active state */
+  border-bottom: 2px solid var(--accent); /* Add an accent highlight */
+  padding-bottom: 5px; /* Adjust padding for the border */
+}
