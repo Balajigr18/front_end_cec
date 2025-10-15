@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(110, 195, 238);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        form{
+            border-radius: 20px;
+            padding: 150px;
+            margin: 350px;
+            background-color: rgba(232, 99, 237, 0.255);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        }
+        tabel{
+            color: rgb(53, 53, 205);
+            background-color: bisque;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: small;
+        }
+        .pass{
+            background-color: rgb(238, 228, 244);
+
+        }
+        .name{
+            background-color: rgb(238, 224, 238);
+        }
+    </style>
+</head>
+<body>
+
+
+     <nav>
+        <ul>
+        <li><a href="../day2/forms.html">forms</a></li>
+        <li><a href="../tables.html">tables</li></a>
+        </ul>
+    </nav>
+    <h1 style="text-align:center;color:rgba(179, 13, 230, 0.612);background-color:rgba(22, 17, 108, 0.216);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Basic Forms</h1>
+    <form action="/submit" method="POST">
+        <label form="name">Name:</label>
+        <input type="text" id="name" name="name" required/><br><br> 
+        <label form="Emai">Email:</label>
+        <input type="Email" id="Email" Email="Email" required/><br><br>
+        <label for="Male">Male</label>   
+        <input type="radio" id="male" name="gender" value="Male" 
+        <label for="Female">Female</label>   
+        <input type="radio" id="Female" name="gender" value="Female"><br><br>
+        <input
+           type="radio"
+           id="female"
+           name="gender"
+           value="female"
+        
+        <h3>Terms And Conditions</h3>
+        <label class="pass">
+        <label class="name">
+            <input type="checkbox" name="terms" required/>
+            I agree to the terms and Conditions</label><br><br>
+            <label for="department">department</label>
+            <select id="department" name="department">
+                <option value="ISE">ISE</option>
+                <option value="CSE">CSE</option>
+                <option value="ME">ME</option>
+                <option value="CIV">CIV</option>
+                <option value="AI-ML">AI-ML</option>
+            </select><br><br>
+           <label class="pass" for="Password">Password</label>
+           <input
+              type="Password"
+              id="Password"
+              name="Password"
+              required
+            /><br><br>
+            <label for="birthday">birthday</label>
+            <input type="date" id="birthday" name="birthday" required><br><br>
+            <textarea>Discription</textarea><br><br>
+            <label for="video">upload video</label>
+            <input type="file" name="video" id="video" accept="video/*"><br><br>
+            <label for="pdf">upload pdf</label>
+            <input 
+               type="file"
+               name="pdf"
+               id="pdf"
+               accept="Application/pdf"><br><br>
+               <label for="doc">upload document</label>
+            <input type="file" name="doc" id="doc" accept="application/docx"><br><br>
+            <label for="rating">give your rating</label>
+            <input 
+               type="range"
+               name="range"
+               id="range"
+               min="0"
+               max="100"
+               <br><br>
+               <label for="color">color</label>
+               <input type="color" id="color" name="color"/><br/><br/>
+               <input type="submit" value="submit"/>
+               <button type="reset">reset</button>
+    </form>
+</body>
+</html>
